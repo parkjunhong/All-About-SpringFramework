@@ -59,8 +59,7 @@ public class BExceptionHandler extends ResponseEntityExceptionHandler {
 ```
 
 # 2. 패키지별 [@ControllerAdvice](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/ControllerAdvice.html) 설정하기
-public @interface ControllerAdvice.basePackageClasses() 를 이용하여 설정한다. \
-Class<?>[] 이기 때문에 여러 개의 패키지를 동시에 적용할 수도 있다.
+public @interface ControllerAdvice.basePackageClasses() 를 이용하여 설정한다. Class<?>[] 이기 때문에 여러 개의 패키지를 동시에 적용할 수도 있다.
 ```java
 /**
  * Type-safe alternative to {@link #value()} for specifying the packages
