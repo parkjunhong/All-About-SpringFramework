@@ -1,5 +1,5 @@
 # 1. [@Controller](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/stereotype/Controller.html)별 [@ControllerAdvice](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/ControllerAdvice.html) 설정하기
-public @interface ControllerAdvice.assignableTypes() 를 이용하여 설정한다. \
+public @interface ControllerAdvice.assignableTypes() 를 이용하여 설정한다. 
 Class<?>[] 이기 때문에 여러 개의 Controller에 동시에 적용할 수도 있다.
 ```java
 /**
@@ -74,8 +74,7 @@ Class<?>[] basePackageClasses() default {};
 
 ```
 
-예) GlobalExceptionHandler는 전체적으로 적용되는 Handler이고, SecurityExceptionHandler는 xxx.security 패키지에 포함된 @Controller들을 처리하고, \
-PerformanceExceptionHandler는 xxx.performance 패키지에 있는 @Controller들을 처리한다.
+예) GlobalExceptionHandler는 전체적으로 적용되는 Handler이고, SecurityExceptionHandler는 xxx.security 패키지에 포함된 @Controller들을 처리하고, PerformanceExceptionHandler는 xxx.performance 패키지에 있는 @Controller들을 처리한다.
 
 ```java
 GlobalExceptionHandler.java
